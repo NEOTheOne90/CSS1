@@ -1,0 +1,122 @@
+
+html {
+    background-color: #F0E5CF;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 87%;
+}
+
+/* 화면이 넓어 모든 내용을 가운데 박스로 넣는다 */
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F7F6F2;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #4B6587;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+header p {
+    margin: 0;
+}
+/* 네이게이션 메뉴 자리 */
+.site-nav {
+    margin-top: 20px;
+}
+.site-nav {
+    margin: 0;
+    padding: 0;
+}
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+}
+.site-nav a {
+    text-decoration: none;
+    display: block;
+    color: #4B6587;
+    padding: 10px 20px;
+    border: 3px solid #4B6587;
+    border-bottom: none;
+     /*밑줄없애기  */
+}
+.site-nav a:hover {
+    /* hover는 마우스를 태그에 올렸을때 */
+    background-color: #4b658767;
+}
+/* 네이게이션 끝 */
+/* 가운데 내용 시작 */
+.content-area {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.main-area {
+    width: 66%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.main-area {
+    width: 66%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 34%;
+    float: right;
+    background-color: #C8C6C6;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    font-size: 85%;
+}
+
+footer {
+    text-align: center;
+    font-size: 85%;
+    color: #999;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+
+
+/* float의 클리어 대신 */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+

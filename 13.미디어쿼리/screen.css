@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html {
+  background-color: #869960;
+  line-height: 1.7;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main Column Typography */
+.main-area h2 {
+  font-size: 165%;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+header {
+  padding-top: 20px;
+  color: #fff;
+  background-color: #99b85b;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 165%;
+}
+
+header p {
+  font-size: 90%;
+  margin: 0;
+}
+
+/* Site Navigation */
+.site-nav {
+  margin-top: 20px;
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+
+.site-nav a {
+  display: block;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #536036;
+}
+
+.site-nav a:hover {
+  background-color: #4e5a33;
+}
+/*  메뉴 화면이 1300보다 클때 CSS */
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 17px;
+  }
+  .container {
+    max-width: 1200px;
+  }
+}
+/*  메뉴가 화면이 700 이하일때 */
+@media screen and (max-width: 700px) {
+  .site-nav li {
+    width: 33.332%;
+    margin-right: 0;
+  }
+  .site-nav a {
+    padding: 15px 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .site-nav li {
+    width: 50%;
+  }
+}
+/* End Site Navigation */
+
+.content-area {
+  background-color: #fff;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+@media screen and (max-width: 480px) {
+  .content-area {
+    padding-top: 20px;
+  }
+}
+
+.main-area {
+  width: 66%;
+  float: left;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 34%;
+  float: left;
+  background-color: #e5e9dc;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  font-size: 85%;
+}
+/* 미디어쿼리를 사용해 화면가로가 700이하일때 CSS */
+@media screen and (max-width: 700px) {
+  .main-area,
+  .sidebar {
+    width: auto;
+    float: none;
+  }
+  .main-area {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hide-small {
+    display: none;
+  }
+}
+.info-box {
+  background-color: #efeedb;
+  border: 5px solid #e6e5c2;
+  padding: 20px 40px 7px 40px;
+  margin-bottom: 1em;
+}
+
+footer {
+  text-align: center;
+  font-size: 85%;
+  color: #fff;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}

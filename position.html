@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            height: 300px;
+            border: 2px solid steelblue;
+            position: relative;
+            /* 컨테이너 안의 박스가 absolute포지션일때 기준이 된다. */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .red {
+            background-color: tomato;
+        }
+
+        .green {
+            background-color: greenyellow;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .relative {
+            position: relative;
+            top: 15px;
+            left: 25px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .fixed {
+            background-color: violet;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box green absolute"></div>
+        <div class="box blue"></div>
+        <div class="box fixed"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS 적용</title>
+    <!-- style태그 or css 파일 링크 -->
+    <style>
+        /* 여기서부터는 CSS 문법적용 */
+        /* boky 요소를 선택 */
+        body {
+            /* 글꼴 변경 */
+            font-family: serif;
+        }
+
+        h1 {
+            font-family: cursive;
+        }
+
+        /*  클래스 선택 */
+        .male {
+            color: blue;
+        }
+
+        .female {
+            color: crimson;
+        }
+
+        /*  ul은 리스트의 상위태그 */
+        ul {
+            /* 리스트 앞에 있는 붙는 점을 제거 */
+            list-style: none;
+        }
+
+        /*  아이디선택 = # 을사용 , 배경색넣기 */
+        #ceo {
+            background-color: rgb(125, 133, 150);
+        }
+
+        body {
+            background-color:navajowhite;
+        }
+
+        h2 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: darkgreen;">별다방 카페</h1>
+    </h2>
+    <h2>운영진</h2>
+    <ul>
+        <li class="male" id="ceo">x</li>
+        <li class="female">Y</li>
+    </ul>
+    <h2>매니저</h2>
+    <ul>
+        <li class="male">P</li>
+        <li class="female">Q</li>
+    </ul>
+    <h2>알바</h2>
+    <ul>
+        <li class="male">A</li>
+        <li class="female">B</li>
+        <li class="male">C</li>
+        <li class="female">D</li>
+    </ul>
+</body>
+
+</html>
